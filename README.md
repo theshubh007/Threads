@@ -1,35 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+  <h3 align="center">A full stack Threads Web</h3>
+Threads is a cutting-edge community platform designed to enhance user interaction and engagement. It addresses the challenges of creating and managing dynamic online communities by providing a comprehensive set of features, including robust authentication, seamless thread creation, and structured commenting. With Threads, users can effortlessly explore and discover other users and communities through efficient search and pagination. Real-time notifications keep users informed about activity within their threads, while profile and community management tools allow for personalized experiences. The application leverages the latest web technologies to ensure optimal performance, data integrity, and a visually appealing user interface. Threads is the perfect solution for fostering vibrant, engaged online communities.
 
-## Getting Started
+  ## <a name="tech-stack">⚙️ Tech Stack</a>
 
-First, run the development server:
+- Next.js
+- MongoDB
+- Shadcn UI
+- TailwindCSS
+- Clerk
+- Webhooks
+- Serverless APIs
+- React Hook Form
+- Zod
+- TypeScript
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+## Features
+- Authentication: Clerk offers email, password, and social logins (Google and GitHub) with profile management.
+- Engaging UI: Home page showcases the latest threads; create threads and comment with nested replies.
+- Search & Pagination: Explore users and communities easily with paginated search.
+- Activity & Notifications: Get notifications on activities like comments on your threads.
+- Profile & Community Management: Manage profiles, create/invite to communities, and handle member roles.
+- Admin Features: Admins can create community-specific threads and manage members.
+- Design & Performance: Pixel-perfect Figma design, blazing-fast performance, server-side rendering, and efficient routing.
+- Data Handling: MongoDB for complex schemas, real-time updates with webhooks, file uploads, and data validation with Zod.
+
+## Quick Start
+### Step 1: 
+clone the repo
+``` git clone https://github.com/adrianhajdin/threads.git
+cd threads
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Step 2:
+Install the project dependencies using npm:
+```
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Step 3:
+Set Up Environment Variables
+```
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/onboarding
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
 
-To learn more about Next.js, take a look at the following resources:
+MONGODB_URL=""
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Step 4:
+run the project
+```
+npm run dev
+```
+Open http://localhost:3000 in your browser to view the project.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+![image](https://github.com/user-attachments/assets/a138ce73-c7c0-4c51-996d-05b70af91601)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![image](https://github.com/user-attachments/assets/78156234-057e-45c9-adff-bf6ed648125d)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# Threads
